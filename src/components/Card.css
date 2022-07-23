@@ -1,0 +1,203 @@
+.card {
+  width: 95%;
+  min-height: 80px;
+  margin: auto;
+  border-radius: 10px;
+  background: #1e262f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+h6 {
+  color: #bdbcbe;
+}
+
+.card__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* flex-direction: colu; */
+  /* padding: 1rem; */
+}
+
+.mobile__div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  margin-left: 3rem;
+  padding-left: 2rem;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile > img {
+  margin: 1rem;
+}
+
+.steps__target {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progressbar_steps {
+  width: 4rem;
+  margin-right: 1rem;
+}
+
+.dates,
+.nutrition {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dates__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.date__performed,
+.date__scheduled {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 7px;
+  padding: 2px 5px;
+}
+
+.date__performed > img {
+  width: 24px;
+  height: 24px;
+  padding-right: -4px;
+}
+
+.date__scheduled > img {
+  width: 26px;
+  height: 26px;
+}
+
+.dates__text {
+  margin-left: 9px;
+}
+
+.button__dates > button,
+.button__nutrition > button {
+  width: 30px;
+  height: 60px;
+  background: #101317;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  margin-left: 1rem;
+}
+
+.button__setTarget {
+  width: 30px;
+  height: 18px;
+  border-radius: 4px;
+  background: #101317;
+  color: #fff;
+  outline: none;
+  border: none;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nutrition__pieChart {
+  width: 4rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+.notification__bell {
+  height: 40px;
+  width: 40px;
+  border-radius: 8px;
+  background-color: #36f5c7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+.button__mobileView {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .button__mobileView {
+    display: inline-block;
+    width: 30px;
+    height: 60px;
+    background: #101317;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    margin-left: 1rem;
+  }
+
+  .rightarrow__rotate {
+    transform: rotate(90deg);
+  }
+
+  .card {
+    background: #101317;
+    height: auto;
+    transition: 0.5s ease-in-out;
+  }
+
+  .card__container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .mobile__div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem 1rem;
+    padding: 0;
+  }
+
+  .profile,
+  .dates,
+  .nutrition,
+  .steps__target {
+    background: #1e262f;
+    padding: 1rem;
+    margin: 0.2rem 0.5rem;
+    width: 90vw;
+    height: 120px;
+    border-radius: 16px;
+  }
+  .bell {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #1e262f;
+    padding: 1rem;
+    margin: 0.2rem 0.5rem;
+    width: 90vw;
+    height: 100px;
+    border-radius: 10px;
+  }
+}
