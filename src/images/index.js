@@ -1,0 +1,11 @@
+export { default as workout } from "./workout.svg";
+export { default as bell } from "./Vectorbell.svg";
+export { default as calender } from "./calender.svg";
+export { default as checked } from "./Vectorchecked.svg";
+export { default as minus } from "./Vectorminus.svg";
+export { default as nutrition } from "./Vectornutrition.svg";
+export { default as plus } from "./Vectorplus.svg";
+export { default as rightarrow } from "./Vectorrightarrow.svg";
+export { default as steps } from "./Vectorstep.svg";
+export { default as charvie } from "./charvie.png";
+export { default as exclaim } from "./Vectorexclaim.svg";
