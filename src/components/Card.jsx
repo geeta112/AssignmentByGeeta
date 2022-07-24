@@ -163,9 +163,10 @@ const Card = ({ user }) => {
 
             {/* nutrition start*/}
             <div className="nutrition">
-              <a data-tip="" data-for="overridePosition">
+              <a href="/" data-tip="" data-for="overridePosition">
                 <div className="nutrition__pieChart">
                   <PieChart
+                    key={user.userId}
                     label={(obj) => (
                       <svg>
                         <text
